@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezins Weerbericht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌤️ Weerbericht voor het gezin</h1>
+        <div class="weather-card" id="weatherCard">
+            <div class="location">📍 Rotterdam</div>
+            <div class="temperature" id="temperature">Laden...</div>
+            <div class="description" id="description">Even geduld...</div>
+            <div class="message" id="message"></div>
+            <div class="details">
+                <div class="detail-item">
+                    <span>💨 Wind</span>
+                    <span id="wind">-</span>
+                </div>
+                <div class="detail-item">
+                    <span>💧 Luchtvochtigheid</span>
+                    <span id="humidity">-</span>
+                </div>
+                <div class="detail-item">
+                    <span>🌡️ Voelt als</span>
+                    <span id="feelsLike">-</span>
+                </div>
+            </div>
+        </div>
+        <button onclick="getWeather()" class="refresh-btn">🔄 Ververs</button>
+        <p class="footer">Laatst bijgewerkt: <span id="lastUpdate">-</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
